@@ -1,3 +1,10 @@
 {
+  "name": "monorepo-releases-poc",
+  "private": true,
+  "engines": {
+    "node": ">=12"
+  },
+  "repository": "ninetails/monorepo-releases-poc",
+  "homepage": "https://github.com/ninetails/monorepo-releases-poc",
   "license": "MIT"
 }

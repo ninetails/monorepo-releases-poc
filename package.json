@@ -8,6 +8,8 @@
   "homepage": "https://github.com/ninetails/monorepo-releases-poc",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
     "rimraf": "^3.0.2"
   },
   "scripts": {

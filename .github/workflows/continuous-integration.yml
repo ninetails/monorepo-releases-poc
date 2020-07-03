@@ -1,0 +1,70 @@
+name: Continuous Integration
+
+on: [push, pull_request]
+
+jobs:
+
+  build-npm:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x]
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: npm install
+      run: npm install
+
+    - name: bootstrap
+      run: npm run bootstrap
+
+    - name: build
+      run: npm run build
+
+    - name: test
+      run: npm run test
+
+  build-yarn:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x]
+        yarn-version: [1.x, berry]
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: install yarn ${{ matrix.yarn-version }}
+      run: npm install -g yarn@${{ matrix.yarn-version }}
+
+    - name: yarn install
+      run: yarn
+
+    - name: build
+      run: yarn build
+
+    - name: test
+      run: yarn test

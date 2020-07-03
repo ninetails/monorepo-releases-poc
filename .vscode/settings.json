@@ -1,0 +1,28 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.*rc{,.js,.json,.yml,.yaml}": true,
+    "**/.*ignore": true,
+    "**/.eslintcache": true,
+    "*.config.js": true,
+    ".editorconfig": true,
+    ".env*": true,
+    ".github/": true,
+    ".vscode/": true,
+    ".pnp.js": true,
+    ".yarn/": true,
+    "LICENSE": true,
+    "CONTRIBUTING.md": true,
+    "{j,t}sconfig.json": true,
+    "lerna.json": true,
+    "package-lock.json": true,
+    "yarn.lock": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+  }
+}

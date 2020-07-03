@@ -225,3 +225,9 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/react,windows,linux,macos,vim,visualstudiocode,node
+
+### monorepo-releases-poc ###
+
+# Lock files (temporary)
+package-lock.json
+yarn.lock

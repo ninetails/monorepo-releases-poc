@@ -231,3 +231,8 @@ $RECYCLE.BIN/
 # Lock files (temporary)
 package-lock.json
 yarn.lock
+
+# Yarn berry files (temporary)
+.yarn
+.pnp.js
+.yarnrc.yml

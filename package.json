@@ -18,6 +18,7 @@
     "rimraf": "^3.0.2"
   },
   "scripts": {
+    "bootstrap": "lerna bootstrap",
     "clean": "rimraf node_modules package-lock.json yarn.lock .pnp.js |:",
     "reset": "$npm_execpath run clean && $npm_execpath install"
   }

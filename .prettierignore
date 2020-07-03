@@ -1,9 +1,11 @@
 # dotfiles
 .*
+!.github
 
 # Package Managers
 package.json
 package-lock.json
+.yarn
 yarn.lock
 
 # Dependencies

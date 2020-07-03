@@ -8,7 +8,7 @@
     "node": ">=12"
   },
   "repository": "ninetails/monorepo-releases-poc",
-  "homepage": "https://github.com/ninetails/monorepo-releases-poc",
+  "homepage": "https://github.com/ninetails/monorepo-releases-poc#readme",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",

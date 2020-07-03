@@ -22,7 +22,9 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
     "clean": "rimraf node_modules package-lock.json yarn.lock .pnp.js |:",
-    "reset": "$npm_execpath run clean && $npm_execpath install"
+    "reset": "$npm_execpath run clean && $npm_execpath install",
+    "test": "lerna run test"
   }
 }

@@ -10,6 +10,7 @@
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
+    "husky": "^4.2.5",
     "rimraf": "^3.0.2"
   },
   "scripts": {
